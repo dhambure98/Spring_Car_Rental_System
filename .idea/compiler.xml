@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Spring_Car_Rental_System" target="1.5" />
+      <module name="Spring_Car_Rental_System" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
