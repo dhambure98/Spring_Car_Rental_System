@@ -4,6 +4,11 @@ import lk.ijse.spring.config.WebAppConfig;
 import lk.ijse.spring.config.WebRootConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+/**
+ * @author : A.D.Liyanage
+ * @service : 1.0
+ **/
+
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
