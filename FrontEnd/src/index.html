@@ -7,13 +7,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home | Car Rental System</title>
-    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assests/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car Rental System | Home</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
+    <!-- main page loader bar-->
+    <div class="loading">
+        <h2>L O A D I N G</h2>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!--Home page nav bar -->
+    <header id="header" class="fixed-top" style="background-color: black;">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo"><a href="index.html">Easy Car Rental</a></h1>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto  " href="#about">About</a></li>
+                    <li><a class="nav-link scrollto  " href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto  " href="#contact">Contact</a></li>
+                    <li><a class="nav-link scrollto  " href="adminLogin.html"><Div><img src="assets/img/admin.png" alt="" style="height: 25px; width: 25px;"></Div></a></li>
+                    <li><a class="nav-link scrollto " href="driverLogin.html"><Div><img src="assets/img/driver.png" alt="" style="height: 25px; width: 25px;"></Div></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main header  -->
+    <section id="hero">
+        <div class="hero-container">
+            <h3>Welcome to <strong>Easy Car Rental</strong></h3>
+            <h1>FIND THE IDEAL CAR FOR YOU</h1>
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Start the about us-->
+    <main id="main">
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>About</h2>
+                    <h3>Learn More <span>About Us</span></h3>
+                </div>
+
+                <div class="row content">
+                    <div class="col-lg-12">
+                        <p>
+                            Easy Car Rental Private Limited is a car rental service with 5 years of history. This company has about
+                            50 cars and 40 drivers working for them in regular shifts. This company is located at No. 200, Galle
+                            Road, Panadura, and well known for their services. Usually, people who don’t own a car, people who
+                            are waiting for their car to be repaired and, travelers or tourists seek their services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+    <!-- # Script Start-->
+    <script>
+        // main page loader
+        const loader = document.querySelector('.loading');
+        const main = document.querySelector('.main');
+
+        function init() {
+            setTimeout(() => {
+                loader.style.opacity = 0;
+                loader.style.display = 'none';
+
+                main.style.display = 'block';
+                setTimeout(() => (main.style.opacity = 1), 50);
+            }, 4000);
+        }
+        init();
+    </script>
 
 </body>
 </html>
