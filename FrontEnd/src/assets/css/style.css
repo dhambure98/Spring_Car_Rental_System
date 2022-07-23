@@ -480,6 +480,7 @@ section {
 .section-title p {
     margin: 15px auto 0 auto;
     font-weight: 600;
+    font-size: 30px;
 }
 
 @media (min-width: 1024px) {
@@ -491,6 +492,11 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about .section-title{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
 .about .content h3 {
     font-weight: 600;
     font-size: 26px;
@@ -502,6 +508,11 @@ section {
 --------------------------------------------------------------*/
 .services {
     padding-bottom: 30px;
+}
+.services .section-title{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .services .icon-box {
