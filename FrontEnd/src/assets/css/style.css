@@ -14,6 +14,20 @@ h2 {
     letter-spacing: .1em;
     text-align: center;
 }
+.loading{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #cccccc;
+    text-align: center;
+    padding: 250px;
+}
+.hidden{
+    display: none;
+}
 /*Loading Dots Can we use pseudo elements here instead :after? */
 .loading span {
     display: inline-block;
@@ -25,7 +39,8 @@ h2 {
     border-radius: .6em;
     animation: loading 1s infinite alternate;
 }
-/*Dots Colors Smarter targeting vs nth-of-type?*/
+
+/* Dots Colors Smarter targeting vs nth-of-type? */
 .loading span:nth-of-type(2) {
     background: #008FB2;
     animation-delay: 0.2s;
@@ -50,6 +65,7 @@ h2 {
     background: #A0B61E;
     animation-delay: 1.2s;
 }
+
 /*Animation keyframes Use transition opacity instead of keyframes?*/
 @keyframes loading {
     0% {
@@ -67,6 +83,7 @@ body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
     scroll-behavior: smooth;
+    line-height: 1.6;
 }
 a {
     color: #e43c5c;
@@ -349,10 +366,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/img1.jpg") top center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url("../img/img2.jpg") top center;
     background-size: cover;
     position: relative;
 }
