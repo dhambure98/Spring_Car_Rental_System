@@ -77,6 +77,19 @@ h2 {
 }
 
 /*--------------------------------------------------------------
+# custom scroll bar
+--------------------------------------------------------------*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
@@ -95,6 +108,10 @@ a:hover {
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Nunito", sans-serif;
+}
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
 }
 
 /*--------------------------------------------------------------
@@ -587,6 +604,38 @@ section {
     margin-bottom: 0;
 }
 
+/*services box style */
+.serv-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.serv-content .card{
+    width: 320px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 10px;
+    text-align: center;
+}
+.serv-content .card p{
+    font-size: 15px;
+}
+.serv-content .text{
+    font-weight: 600;
+}
+.serv-content .card:hover{
+    background-color: #e43c5c;
+    color: #fff;
+    transition: all 0.3s ease-out;
+}
+
 .services .icon-box:hover .title a, .services .icon-box:hover .description {
     color: #fff;
 }
@@ -594,6 +643,8 @@ section {
 .services .icon-box:hover .icon i {
     color: #fff;
 }
+/*-----*/
+
 #toyotaP{
     position: relative;
     left: 38%;
