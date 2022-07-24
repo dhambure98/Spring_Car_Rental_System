@@ -92,6 +92,7 @@ $("#btnCustomerDelete").click(function () {
     }
 
 })
+
 // search
 $("#btnCustomerSearch").click(function (){
     let id=$("#txtUserId").val();
