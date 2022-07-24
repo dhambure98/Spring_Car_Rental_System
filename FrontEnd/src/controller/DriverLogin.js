@@ -3,12 +3,12 @@
 * @service : 1.0
 *-->
 
-$("#btnAdmin").click(function (){
+$("#btnDdlogin").click(function (){
     let user = $("#user").val();
     let password = $("#pass").val();
-    if (user === "admin" && password === "123"){
-        location.href = "admin.html";
-
+    if (user === "driver" && password === "123"){
+        location.href = "driver.html";
+    
     }else {
         alert("Wrong Secret Code Or Password");
 
