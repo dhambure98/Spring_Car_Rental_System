@@ -1,4 +1,4 @@
-package lk.ijse.spring.service.impl;
+package lk.ijse.spring.service.Impl;
 
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.dto.DriverDTO;

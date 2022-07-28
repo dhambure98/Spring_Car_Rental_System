@@ -1,4 +1,4 @@
-package lk.ijse.spring.service.impl;
+package lk.ijse.spring.service.Impl;
 
 import lk.ijse.spring.dto.CarDTO;
 import lk.ijse.spring.entity.Car;

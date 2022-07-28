@@ -111,6 +111,7 @@ $("#btnCustomerSearch").click(function (){
         }
     })
 });
+
 $("#txtUserId").on('keyup', function (eObj) {
     if (eObj.key == "Enter") {
         let id=$("#txtUserId").val();
@@ -147,7 +148,6 @@ function getAllCustomers(){
             }
         }
     });
-
 }
 
 function clearcustomer() {
@@ -185,16 +185,19 @@ $("#pass").on('keyup',function (event){
         $('#dlicense').focus();
     }
 });
+
 $("#dlicense").on('keyup',function (event){
     if (event.key=="Enter"){
         $('#contact').focus();
     }
 });
+
 $("#contact").on('keyup',function (event){
     if (event.key=="Enter"){
         $('#address').focus();
     }
 });
+
 $("#address").on('keyup',function (event){
     if (event.key=="Enter"){
         $('#btnSingup').focus();
@@ -206,21 +209,25 @@ $("#txtUserId").on('keyup',function (event){
         $('#txtEmail').focus();
     }
 });
+
 $("#txtEmail").on('keyup',function (event){
     if (event.key=="Enter"){
         $('#txtPassword').focus();
     }
 });
+
 $("#txtPassword").on('keyup',function (event){
     if (event.key=="Enter"){
         $('#txtlicense').focus();
     }
 });
+
 $("#txtlicense").on('keyup',function (event){
     if (event.key=="Enter"){
         $('#txtContact').focus();
     }
 });
+
 $("#txtContact").on('keyup',function (event){
     if (event.key=="Enter"){
         $('#txtAddress').focus();
