@@ -1,8 +1,3 @@
-<!--*
-* @author : A.D.Liyanage
-* @service : 1.0
-*-->
-
 getAllDriver();
 $("#btnDAdd").click(function (){
 

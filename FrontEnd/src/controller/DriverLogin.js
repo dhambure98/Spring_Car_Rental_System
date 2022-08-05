@@ -1,8 +1,3 @@
-<!--*
-* @author : A.D.Liyanage
-* @service : 1.0
-*-->
-
 $("#btnDdlogin").click(function (){
     let user = $("#user").val();
     let password = $("#pass").val();

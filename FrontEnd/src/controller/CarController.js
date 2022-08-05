@@ -1,8 +1,3 @@
-<!--*
-* @author : A.D.Liyanage
-* @service : 1.0
-*-->
-
 getAllCars();
 $("#btnCarAdd").click(function (){
     let carId = $("#txtcarcode").val();

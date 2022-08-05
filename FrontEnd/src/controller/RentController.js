@@ -1,8 +1,3 @@
-<!--*
-* @author : A.D.Liyanage
-* @service : 1.0
-*-->
-
 function curruntDate() {
     let today = new Date().toISOString().slice(0, 10);
     $("#rseDate").text(today);
